@@ -1,0 +1,23 @@
+%nav.navbar.menu-top.navbar-default.header-fullscreen.sticky-header.navbar-static-top
+  %div.container-fluid
+    %div.navbar-header
+      = link_to 'SOFTWARE ENGINEER', root_path, class: 'navbar-brand'
+    -#%ul.nav.navbar-nav
+    %ul.nav.navbar-nav.navbar-right
+      %li.active
+        = link_to 'Home', root_path
+      %li
+        = link_to 'About me', root_path
+      %li
+        = link_to 'Band', root_path
+      %li
+        = link_to 'Sport', root_path
+    -#%ul.nav.navbar-nav.navbar-right
+      %li
+        = link_to root_path do
+          %span.glyphicon.glyphicon-user
+          Sign Up
+      %li
+        = link_to root_path do
+          %span.glyphicon.glyphicon-log-in
+          Login
