@@ -7,13 +7,21 @@
     -#%ul.nav.navbar-nav
     %ul.nav.navbar-nav.navbar-right
       %li#home
-        = link_to 'Home', root_path
+        = link_to root_path do
+          %i.glyphicon.glyphicon-home
+          Home
       %li#about
-        = link_to 'About me', root_path
+        = link_to about_me_index_path do
+          %i.glyphicon.glyphicon-briefcase
+          About me
       %li#band
-        = link_to 'Band', root_path
+        = link_to root_path do
+          %i.glyphicon.glyphicon-music
+          Band
       %li#sport
-        = link_to 'Sport', root_path
+        = link_to root_path do
+          %i.glyphicon.glyphicon-globe
+          Sport
     -#%ul.nav.navbar-nav.navbar-right
       %li
         = link_to root_path do

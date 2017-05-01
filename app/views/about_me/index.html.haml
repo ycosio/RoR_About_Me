@@ -1,0 +1,57 @@
+%div.white-container
+  .container
+    %h2.center-title.scrollReveal.sr-bottom My work
+    #tabs
+      / Nav tabs
+      %ul.list-inline.text-center.about-tabs.margin-b-40
+        %li.active
+          %a{"data-toggle" => "tab", :href => "#process"} Process
+        %li
+          %a{"data-toggle" => "tab", :href => "#currently"} Currently
+        %li
+          %a{"data-toggle" => "tab", :href => "#skills"} Skills
+      %div.sections
+        #process
+          %p Throughout my career every semester I have had projects that include the use of knowledge of all the subjects from the current semester. I have participated as software, web and database developer, using tools like PHP, JavaScript, MySql, C#  and Java.
+          .text-center
+            = image_tag 'udc.png'
+        #currently
+          %p I'm working as a trainee in three different places from Colima, learning all about those topics that I did not learn in my faculty like the most used languages of programming, how works a real team in a company, get requirements, deal with the deadline, quality of software a so on.
+          %table
+            %tr.works
+              %td
+                .center-title
+                  %h4 UDC
+                .text-center.works
+                  = image_tag 'mediosDidacticos.jpg'
+                %p I am working on the development of a system of management of educational resources that are developed by teachers of the UDC through the standard LOM that record all kinds of resource data.
+              %td
+                .center-title
+                  %h4 TangoSource
+                .text-center.works
+                  = image_tag 'tangoSource.jpg'
+                %p I am as a trainee in the company TangoSource Mexico learning about the best practices to objects oriented programming, agile programming methods, version control, Ruby, Ruby On Rails o so on.
+              %td
+                .center-title
+                  %h4 MagmaHackers
+                .text-center.works
+                  = image_tag 'magmahackers.png'
+                %p I am getting an online course from the company Magmalabs to get better general abilities of programming through the accomplishment of variety o task to train us.
+        #skills.tab-pane
+          .col-sm-8.col-sm-offset-2.text-center
+            .progress.clearfix
+              .progress-bar.progress85
+                %span.skill-name Back End
+                %span.pull-right.value 85%
+            / progress bar
+            .progress.clearfix
+              .progress-bar.progress65
+                %span.skill-name Front End
+                %span.pull-right.value 65%
+            / progress bar
+            .progress.clearfix
+              .progress-bar.progress75
+                %span.skill-name Databases
+                %span.pull-right.value 75%
+            / progress bar
+        / tab panel end
