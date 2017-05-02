@@ -1,0 +1,41 @@
+%div.container
+  %h2.center-title
+    My favorite band
+  %div.tab-content
+    %div.row
+      %div.col-sm-8.col-sm-offset-2.text-center
+        %h4
+          %p
+            I consider myself a fun and open person, so I do not have a favorite band to listen to the music.
+            It is enough if the music has rhythm or something interesting to say,
+            well, the following 4 genres are most I am used to listening:
+      %table
+        %tr.band
+          %td
+            .center-title
+              %h4 Rap
+            .text-center.band.play
+              = image_tag 'cartelDeSanta.jpg'
+              = audio_tag 'losMensajes.mp3', autoplay: false, controls: true
+            %p.center Cartel de Santa
+          %td
+            .center-title
+              %h4 Rock
+            .text-center.band.play
+              = image_tag 'linkinPark.jpg'
+              = audio_tag 'numb.mp3', autoplay: false, controls: true
+            %p.center Linkin Park
+          %td
+            .center-title
+              %h4 Banda
+            .text-center.band.play
+              = image_tag 'christianNodal'
+              = audio_tag 'adiosAmor.mp3', autoplay: false, controls: true
+            %p.center Christian Nodal
+          %td
+            .center-title
+              %h4 Reggaeton
+            .text-center.band.play
+              = image_tag 'luisFonsiDaddyYankee'
+              = audio_tag 'despacito.mp3', autoplay: false, controls: true
+            %p.center Luis Fonsi - Daddy Yankee
