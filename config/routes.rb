@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sport/index'
+
   get 'band/index'
 
   root 'home#index'
@@ -6,5 +8,6 @@ Rails.application.routes.draw do
   resources :home
   resources :about_me
   resources :band
+  resources :sport
 
 end
