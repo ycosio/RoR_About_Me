@@ -10,6 +10,10 @@ div.band {
   > img:hover {
     opacity: 0.5;
   }
+
+  > audio {
+    display: none;
+  }
 }
 
 div.band{
